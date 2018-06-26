@@ -1,0 +1,2 @@
+class ScheduledStop < ApplicationRecord
+end
