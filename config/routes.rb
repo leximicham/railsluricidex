@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'games/index'
-  get 'games/show'
-  get 'games/new'
-  get 'games/edit'
-  get 'games/delete'
+  get 'servers/index'
+  get 'servers/delete'
+  get 'servers/edit'
+  get 'servers/new'
+  get 'servers/show'
   root to: 'root#index'
-  get 'root/index'
-  resources :tasks
+  resources :root
+  resources :games
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

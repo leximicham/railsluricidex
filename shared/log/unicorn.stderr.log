@@ -122,3 +122,133 @@ I, [2018-06-25T14:02:30.951248 #5187]  INFO -- : worker=0 spawned pid=5187
 I, [2018-06-25T14:02:30.956443 #5187]  INFO -- : worker=0 ready
 I, [2018-06-25T14:02:30.957060 #5190]  INFO -- : worker=1 spawned pid=5190
 I, [2018-06-25T14:02:30.958979 #5190]  INFO -- : worker=1 ready
+I, [2018-06-26T18:41:49.086793 #5183]  INFO -- : reaped #<Process::Status: pid 5187 exit 0> worker=0
+I, [2018-06-26T18:41:49.087580 #5183]  INFO -- : reaped #<Process::Status: pid 5190 exit 0> worker=1
+I, [2018-06-26T18:41:49.088210 #5183]  INFO -- : master complete
+I, [2018-06-26T18:41:58.007460 #26187]  INFO -- : Refreshing Gem list
+I, [2018-06-26T18:42:08.957691 #26187]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T18:42:08.961049 #26187]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T18:42:08.961406 #26187]  INFO -- : worker=0 spawning...
+I, [2018-06-26T18:42:08.963179 #26187]  INFO -- : worker=1 spawning...
+I, [2018-06-26T18:42:08.971745 #26187]  INFO -- : master process ready
+I, [2018-06-26T18:42:08.982873 #26195]  INFO -- : worker=1 spawned pid=26195
+I, [2018-06-26T18:42:08.990227 #26195]  INFO -- : worker=1 ready
+I, [2018-06-26T18:42:08.978280 #26193]  INFO -- : worker=0 spawned pid=26193
+I, [2018-06-26T18:42:08.993132 #26193]  INFO -- : worker=0 ready
+I, [2018-06-26T18:50:31.176314 #26187]  INFO -- : reaped #<Process::Status: pid 26193 exit 0> worker=0
+I, [2018-06-26T18:50:31.177056 #26187]  INFO -- : reaped #<Process::Status: pid 26195 exit 0> worker=1
+I, [2018-06-26T18:50:31.177527 #26187]  INFO -- : master complete
+I, [2018-06-26T18:50:33.893401 #26434]  INFO -- : Refreshing Gem list
+I, [2018-06-26T18:50:42.501956 #26434]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T18:50:42.505833 #26434]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T18:50:42.506281 #26434]  INFO -- : worker=0 spawning...
+I, [2018-06-26T18:50:42.508293 #26434]  INFO -- : worker=1 spawning...
+I, [2018-06-26T18:50:42.509663 #26438]  INFO -- : worker=0 spawned pid=26438
+I, [2018-06-26T18:50:42.511225 #26434]  INFO -- : master process ready
+I, [2018-06-26T18:50:42.511463 #26438]  INFO -- : worker=0 ready
+I, [2018-06-26T18:50:42.518732 #26441]  INFO -- : worker=1 spawned pid=26441
+I, [2018-06-26T18:50:42.519285 #26441]  INFO -- : worker=1 ready
+I, [2018-06-26T18:52:09.501834 #26434]  INFO -- : reaped #<Process::Status: pid 26438 exit 0> worker=0
+I, [2018-06-26T18:52:09.502457 #26434]  INFO -- : reaped #<Process::Status: pid 26441 exit 0> worker=1
+I, [2018-06-26T18:52:09.502988 #26434]  INFO -- : master complete
+I, [2018-06-26T18:52:11.263190 #26594]  INFO -- : Refreshing Gem list
+I, [2018-06-26T18:52:19.984883 #26594]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T18:52:19.988105 #26594]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T18:52:19.988445 #26594]  INFO -- : worker=0 spawning...
+I, [2018-06-26T18:52:19.990091 #26594]  INFO -- : worker=1 spawning...
+I, [2018-06-26T18:52:19.991296 #26594]  INFO -- : master process ready
+I, [2018-06-26T18:52:19.992761 #26599]  INFO -- : worker=0 spawned pid=26599
+I, [2018-06-26T18:52:19.993242 #26599]  INFO -- : worker=0 ready
+I, [2018-06-26T18:52:19.997596 #26601]  INFO -- : worker=1 spawned pid=26601
+I, [2018-06-26T18:52:19.998512 #26601]  INFO -- : worker=1 ready
+I, [2018-06-26T18:57:04.920349 #26594]  INFO -- : reaped #<Process::Status: pid 26599 exit 0> worker=0
+I, [2018-06-26T18:57:04.921026 #26594]  INFO -- : reaped #<Process::Status: pid 26601 exit 0> worker=1
+I, [2018-06-26T18:57:04.921579 #26594]  INFO -- : master complete
+I, [2018-06-26T18:57:08.939238 #26774]  INFO -- : Refreshing Gem list
+I, [2018-06-26T18:57:18.609577 #26774]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T18:57:18.613615 #26774]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T18:57:18.614041 #26774]  INFO -- : worker=0 spawning...
+I, [2018-06-26T18:57:18.616115 #26774]  INFO -- : worker=1 spawning...
+I, [2018-06-26T18:57:18.617692 #26774]  INFO -- : master process ready
+I, [2018-06-26T18:57:18.619630 #26779]  INFO -- : worker=0 spawned pid=26779
+I, [2018-06-26T18:57:18.624310 #26779]  INFO -- : worker=0 ready
+I, [2018-06-26T18:57:18.624931 #26782]  INFO -- : worker=1 spawned pid=26782
+I, [2018-06-26T18:57:18.626862 #26782]  INFO -- : worker=1 ready
+I, [2018-06-26T18:57:45.309558 #26774]  INFO -- : reaped #<Process::Status: pid 26779 exit 0> worker=0
+I, [2018-06-26T18:57:45.310289 #26774]  INFO -- : reaped #<Process::Status: pid 26782 exit 0> worker=1
+I, [2018-06-26T18:57:45.310810 #26774]  INFO -- : master complete
+I, [2018-06-26T18:57:47.516579 #26929]  INFO -- : Refreshing Gem list
+I, [2018-06-26T18:57:56.305283 #26929]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T18:57:56.309021 #26929]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T18:57:56.309440 #26929]  INFO -- : worker=0 spawning...
+I, [2018-06-26T18:57:56.311420 #26929]  INFO -- : worker=1 spawning...
+I, [2018-06-26T18:57:56.313043 #26929]  INFO -- : master process ready
+I, [2018-06-26T18:57:56.315114 #26933]  INFO -- : worker=0 spawned pid=26933
+I, [2018-06-26T18:57:56.318559 #26933]  INFO -- : worker=0 ready
+I, [2018-06-26T18:57:56.319596 #26936]  INFO -- : worker=1 spawned pid=26936
+I, [2018-06-26T18:57:56.322557 #26936]  INFO -- : worker=1 ready
+I, [2018-06-26T19:00:30.045045 #26929]  INFO -- : reaped #<Process::Status: pid 26933 exit 0> worker=0
+I, [2018-06-26T19:00:30.045821 #26929]  INFO -- : reaped #<Process::Status: pid 26936 exit 0> worker=1
+I, [2018-06-26T19:00:30.046349 #26929]  INFO -- : master complete
+I, [2018-06-26T19:00:31.614114 #27113]  INFO -- : Refreshing Gem list
+I, [2018-06-26T19:00:40.231697 #27113]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T19:00:40.235630 #27113]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T19:00:40.236038 #27113]  INFO -- : worker=0 spawning...
+I, [2018-06-26T19:00:40.238042 #27113]  INFO -- : worker=1 spawning...
+I, [2018-06-26T19:00:40.239362 #27117]  INFO -- : worker=0 spawned pid=27117
+I, [2018-06-26T19:00:40.240733 #27113]  INFO -- : master process ready
+I, [2018-06-26T19:00:40.240956 #27117]  INFO -- : worker=0 ready
+I, [2018-06-26T19:00:40.246690 #27120]  INFO -- : worker=1 spawned pid=27120
+I, [2018-06-26T19:00:40.247346 #27120]  INFO -- : worker=1 ready
+I, [2018-06-26T19:01:41.192462 #27113]  INFO -- : reaped #<Process::Status: pid 27117 exit 0> worker=0
+I, [2018-06-26T19:01:41.193058 #27113]  INFO -- : reaped #<Process::Status: pid 27120 exit 0> worker=1
+I, [2018-06-26T19:01:41.193537 #27113]  INFO -- : master complete
+I, [2018-06-26T19:01:42.569689 #27269]  INFO -- : Refreshing Gem list
+I, [2018-06-26T19:01:51.076064 #27269]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T19:01:51.079304 #27269]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T19:01:51.079676 #27269]  INFO -- : worker=0 spawning...
+I, [2018-06-26T19:01:51.081613 #27269]  INFO -- : worker=1 spawning...
+I, [2018-06-26T19:01:51.083569 #27269]  INFO -- : master process ready
+I, [2018-06-26T19:01:51.085020 #27274]  INFO -- : worker=0 spawned pid=27274
+I, [2018-06-26T19:01:51.085550 #27274]  INFO -- : worker=0 ready
+I, [2018-06-26T19:01:51.090962 #27277]  INFO -- : worker=1 spawned pid=27277
+I, [2018-06-26T19:01:51.104690 #27277]  INFO -- : worker=1 ready
+I, [2018-06-26T19:02:16.056494 #27269]  INFO -- : reaped #<Process::Status: pid 27274 exit 0> worker=0
+I, [2018-06-26T19:02:16.057190 #27269]  INFO -- : reaped #<Process::Status: pid 27277 exit 0> worker=1
+I, [2018-06-26T19:02:16.057695 #27269]  INFO -- : master complete
+I, [2018-06-26T19:02:17.737219 #27424]  INFO -- : Refreshing Gem list
+I, [2018-06-26T19:02:26.778765 #27424]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T19:02:26.782685 #27424]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T19:02:26.783223 #27424]  INFO -- : worker=0 spawning...
+I, [2018-06-26T19:02:26.785135 #27424]  INFO -- : worker=1 spawning...
+I, [2018-06-26T19:02:26.787565 #27424]  INFO -- : master process ready
+I, [2018-06-26T19:02:26.786347 #27428]  INFO -- : worker=0 spawned pid=27428
+I, [2018-06-26T19:02:26.789200 #27428]  INFO -- : worker=0 ready
+I, [2018-06-26T19:02:26.793789 #27431]  INFO -- : worker=1 spawned pid=27431
+I, [2018-06-26T19:02:26.794509 #27431]  INFO -- : worker=1 ready
+I, [2018-06-26T19:33:11.916156 #27424]  INFO -- : reaped #<Process::Status: pid 27428 exit 0> worker=0
+I, [2018-06-26T19:33:11.916852 #27424]  INFO -- : reaped #<Process::Status: pid 27431 exit 0> worker=1
+I, [2018-06-26T19:33:11.917307 #27424]  INFO -- : master complete
+I, [2018-06-26T19:33:21.397876 #28090]  INFO -- : Refreshing Gem list
+I, [2018-06-26T19:33:30.764432 #28090]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T19:33:30.769179 #28090]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T19:33:30.769632 #28090]  INFO -- : worker=0 spawning...
+I, [2018-06-26T19:33:30.771612 #28090]  INFO -- : worker=1 spawning...
+I, [2018-06-26T19:33:30.773115 #28090]  INFO -- : master process ready
+I, [2018-06-26T19:33:30.774783 #28095]  INFO -- : worker=0 spawned pid=28095
+I, [2018-06-26T19:33:30.778561 #28095]  INFO -- : worker=0 ready
+I, [2018-06-26T19:33:30.780736 #28098]  INFO -- : worker=1 spawned pid=28098
+I, [2018-06-26T19:33:30.782836 #28098]  INFO -- : worker=1 ready
+I, [2018-06-26T19:37:14.348404 #28090]  INFO -- : reaped #<Process::Status: pid 28095 exit 0> worker=0
+I, [2018-06-26T19:37:14.349128 #28090]  INFO -- : reaped #<Process::Status: pid 28098 exit 0> worker=1
+I, [2018-06-26T19:37:14.349636 #28090]  INFO -- : master complete
+I, [2018-06-26T19:37:22.108337 #28308]  INFO -- : Refreshing Gem list
+I, [2018-06-26T19:37:31.072083 #28308]  INFO -- : unlinking existing socket=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock
+I, [2018-06-26T19:37:31.075875 #28308]  INFO -- : listening on addr=/mnt/nas/luricidex.com/shared/sockets/unicorn.sock fd=12
+I, [2018-06-26T19:37:31.076310 #28308]  INFO -- : worker=0 spawning...
+I, [2018-06-26T19:37:31.078326 #28308]  INFO -- : worker=1 spawning...
+I, [2018-06-26T19:37:31.079629 #28313]  INFO -- : worker=0 spawned pid=28313
+I, [2018-06-26T19:37:31.080988 #28308]  INFO -- : master process ready
+I, [2018-06-26T19:37:31.081196 #28313]  INFO -- : worker=0 ready
+I, [2018-06-26T19:37:31.083416 #28316]  INFO -- : worker=1 spawned pid=28316
+I, [2018-06-26T19:37:31.088138 #28316]  INFO -- : worker=1 ready
