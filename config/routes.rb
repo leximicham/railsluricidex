@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'games/index'
+  get 'games/show'
+  get 'games/new'
+  get 'games/edit'
+  get 'games/delete'
   root to: 'root#index'
   get 'root/index'
   resources :tasks
