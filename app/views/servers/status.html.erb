@@ -1,0 +1,15 @@
+puts @server.friendly_name
+	 @server.games.each do |game|
+	   puts game.friendly_name
+	   puts game.get_status
+	   <form action="server_control/command" method="post">
+	     <input type="hidden" name="game_id" value="#{game.id}" />
+		  if game.running?
+	     	<input type="submit" value="Stop Server" />
+			<input type="hidden" name="command" value="call_stop" />
+		  else
+			<input type="submit" value="Start Server" />
+			<input type="hidden" name="command" value="call_start" />
+		  end
+	   </form>
+	 end

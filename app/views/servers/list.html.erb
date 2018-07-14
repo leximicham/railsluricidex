@@ -1,0 +1,9 @@
+<h1>This is a website</h1>
+<%@servers.each do |server|%>
+<ul>
+  <li>
+    <%=server.friendly_name%>
+    <%=server.game_stats%>
+  </li>
+</ul>
+<%end%>
