@@ -16,16 +16,16 @@ ActiveRecord::Schema.define(version: 2018_06_26_013550) do
   enable_extension "plpgsql"
 
   create_table "games", force: :cascade do |t|
-    t.string "server_id", default: "notNull", null: false
+    t.string "server_id", null: false
     t.string "friendly_name"
-    t.string "service_name", default: "notNull", null: false
+    t.string "service_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["server_id"], name: "index_games_on_server_id"
   end
 
   create_table "scheduled_stops", force: :cascade do |t|
-    t.string "game_id", default: "notNull", null: false
+    t.string "game_id", null: false
     t.datetime "shutdown_time", null: false
     t.datetime "warning_sent_at"
     t.datetime "completed_at"
@@ -38,9 +38,9 @@ ActiveRecord::Schema.define(version: 2018_06_26_013550) do
 
   create_table "servers", force: :cascade do |t|
     t.string "friendly_name"
-    t.string "ip", limit: 15, default: "notNull", null: false
-    t.string "username", default: "notNull", null: false
-    t.text "keyfile", default: "notNull", null: false
+    t.string "ip", limit: 15, null: false
+    t.string "username", null: false
+    t.text "keyfile", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

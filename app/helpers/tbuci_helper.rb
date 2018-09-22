@@ -1,0 +1,2 @@
+module TbuciHelper
+end

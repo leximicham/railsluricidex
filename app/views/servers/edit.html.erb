@@ -1,2 +1,16 @@
-<h1>Servers#edit</h1>
-<p>Find me in app/views/servers/edit.html.erb</p>
+<% @page_title = "Edit Server" %>
+
+<%= link_to("<< Back to List", '/servers/admin', :class => 'back link') %>
+
+<div class="servers edit">
+  <h2>Edit Server #<%= @server.id%></h2>
+
+  <%= form_for(@server) do |f| %>
+
+  <%= render(:partial => 'form', :locals => {:f => f}) %>
+
+  <div class="form-buttons">
+    <%= f.submit("Edit Server") %>
+  </div>
+  <% end %>
+</div>

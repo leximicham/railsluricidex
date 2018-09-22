@@ -1,6 +1,6 @@
 class Runit
   def initialize(ip, username, keyfile)
-	@ssh = Net::SSH.new(ip: ip, user: username, pubkey: keyfile)
+	@ssh = Net::SSH.new(hostname: ip, user: username, pubkey: keyfile)
   end
 
   def status(service)

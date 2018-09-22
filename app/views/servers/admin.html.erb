@@ -1,0 +1,32 @@
+<% @page_title = "Server Admin" %>
+
+<div class="servers index">
+  <h2>Servers</h2>
+
+  <%= link_to("Add New Server", new_server_path, :class => 'action new') %>
+
+  <table class="listing" summary="subject list">
+    <tr class="header">
+      <th>#</th>
+      <th>Friendly Name</th>
+      <th>IP</th>
+      <th>Username</th>
+      <th>Keyfile</th>
+      <th>Actions</th>
+    </tr>
+    <% @server.each do |server| %>
+    <tr>
+      <td><%= server.id %></td>
+      <td><%= server.friendly_name %></td>
+      <td><%= server.ip %></td>
+      <td><%= server.username %></td>
+      <td><%= server.keyfile %></td>
+      <td>
+        <%= link_to("Show", server_path(server), :class => 'action show') %>
+        <%= link_to("Edit", edit_server_path(server), :class => 'action edit') %>
+        <%= link_to("Delete", delete_server_path(server), :class => 'action delete') %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>

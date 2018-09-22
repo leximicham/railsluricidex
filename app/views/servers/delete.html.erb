@@ -1,2 +1,19 @@
-<h1>Servers#delete</h1>
-<p>Find me in app/views/servers/delete.html.erb</p>
+<% @page_title = "Remove Server" %>
+
+<%= link_to("<< Back to List", '/servers/admin', :class => 'back link') %>
+
+<div class="servers edit">
+  <h2>Delete Server #<%= @server.id%></h2>
+
+  <%= form_for(@server, :method => 'delete') do |f| %>
+
+  <p>Are you sure you want to permanently delete this Server?</p>
+
+  <p class="reference-name"><%= f.object.friendly_name %></p>
+
+  <div class="form-buttons">
+    <%= f.submit("Delete Server") %>
+  </div>
+
+  <% end %>
+</div>

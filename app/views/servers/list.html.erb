@@ -1,9 +1,11 @@
+<% @page_title = "All Servers" %>
+
 <h1>This is a website</h1>
-<%@servers.each do |server|%>
+<% @server.each do |server| %>
 <ul>
   <li>
-    <%=server.friendly_name%>
-    <%=server.game_stats%>
+    <%= server.friendly_name %>
+    <%= server.game_stats %>
   </li>
 </ul>
-<%end%>
+<% end %>

@@ -4,14 +4,14 @@ class Server < ApplicationRecord
   # ip
   # username
   # keyfile
-require_dependency 'runit'
+  require_dependency 'runit'
 
   has_many :games
 
   def connect
       @conn ||=Runit.new(ip: self.ip, username: self.username, keyfile: self.keyfile)
       @conn
-end
+  end
 
   def game_stats
     stats = {}
@@ -19,3 +19,4 @@ end
     stats[:num_stopped] = self.games.select { |g| !g.running? }.size
     stats
   end
+end

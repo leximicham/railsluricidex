@@ -1,2 +1,35 @@
-<h1>Servers#show</h1>
-<p>Find me in app/views/servers/show.html.erb</p>
+<% @page_title = "Show Server" %>
+
+<%= link_to("<<Back to List", '/servers/admin', :class => 'back_link') %>
+
+  <div class="servers show">
+    <h2>Show Subject</h2>
+
+    <table summary="Server detail view">
+      <tr>
+        <th>Name</th>
+        <td><%= @server.friendly_name %></td>
+      </tr>
+      <tr>
+        <th>IP</th>
+        <td><%= @server.ip %></td>
+      </tr>
+      <tr>
+        <th>Username</th>
+        <td><%= @server.username %></td>
+      </tr>
+      <tr>
+        <th>Keyfile</th>
+        <td><%= @server.keyfile %></td>
+      </tr>
+      <tr>
+        <th>Created</th>
+        <td><%= @server.created_at %></td>
+      </tr>
+      <tr>
+        <th>Updated</th>
+        <td><%= @server.updated_at %></td>
+      </tr>
+    </table>
+
+  </div>
