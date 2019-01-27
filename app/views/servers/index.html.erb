@@ -1,3 +1,16 @@
 <title>Luricidex</title>
 <h1>Site Under Constrution</h1>
 <p>Your patience please</p>
+
+<% @server.each do |server| %>
+<ul>
+  <li>
+    <%= server.friendly_name %>
+    <%= server.games.each do |game| %>
+    <%= game.friendly_name %>
+    <%= game.get_status %><%= button_to "Start!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_start" }} %>
+    <%= game.get_status %><%= button_to "Stop!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_stop" }} %>
+    <% end %>
+  </li>
+</ul>
+<% end %>

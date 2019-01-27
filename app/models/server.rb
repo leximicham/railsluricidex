@@ -4,12 +4,12 @@ class Server < ApplicationRecord
   # ip
   # username
   # keyfile
-  require_dependency 'runit'
+  require_dependency 'ssh'
 
   has_many :games
 
   def connect
-      @conn ||=Runit.new(ip: self.ip, username: self.username, keyfile: self.keyfile)
+      @conn ||=SSH.new(self.ip, self.username, keys: self.keyfile)
       @conn
   end
 

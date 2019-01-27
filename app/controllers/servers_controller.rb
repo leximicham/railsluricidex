@@ -9,6 +9,7 @@ class ServersController < ApplicationController
 
   def list #GET
     @server = Server.all
+    # byebug
   end
 
   def status #GET
@@ -26,7 +27,7 @@ class ServersController < ApplicationController
 	  command = params[:command] rescue nil
 	  @game = Game.find(game_id)
 	  redirect_to "status/#{@game.server_id}" unless VALID_COMMANDS.include?(command)
-	  @game.call(command)
+	  @game.send(command)
 	  redirect_to "status/#{@game.server_id}"
   end
 

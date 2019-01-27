@@ -1,0 +1,30 @@
+<% @page_title = "Game Admin" %>
+
+<div class="games index">
+  <h2>Games</h2>
+
+  <%= link_to("Add New Game", new_game_path, :class => 'action new') %>
+
+  <table class="listing" summary="subject list">
+    <tr class="header">
+      <th>#</th>
+      <th>Server</th>
+      <th>Friendly Name</th>
+      <th>Service Name</th>
+      <th>Actions</th>
+    </tr>
+    <% @game.each do |game| %>
+    <tr>
+      <td><%= game.id %></td>
+      <td><%= game.server_id %></td>
+      <td><%= game.friendly_name %></td>
+      <td><%= game.service_name %></td>
+      <td>
+        <%= link_to("Show", game_path(game), :class => 'action show') %>
+        <%= link_to("Edit", edit_game_path(game), :class => 'action edit') %>
+        <%= link_to("Delete", delete_game_path(game), :class => 'action delete') %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>

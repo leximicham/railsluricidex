@@ -1,2 +1,19 @@
-<h1>Games#delete</h1>
-<p>Find me in app/views/games/delete.html.erb</p>
+<% @page_title = "Remove Game" %>
+
+<%= link_to("<< Back to List", '/games/admin', :class => 'back link') %>
+
+<div class="games edit">
+  <h2>Delete Game #<%= @game.id%></h2>
+
+  <%= form_for(@game, :method => 'delete') do |f| %>
+
+  <p>Are you sure you want to permanently delete this Game?</p>
+
+  <p class="reference-name"><%= f.object.friendly_name %></p>
+
+  <div class="form-buttons">
+    <%= f.submit("Delete Game") %>
+  </div>
+
+  <% end %>
+</div>

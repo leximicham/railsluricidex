@@ -17,8 +17,8 @@ module LuricidexCom
     # the framework and any gems in your application.
   end
 
-  #class Application < Rails::Application
-  #config.web_console.whitelisted_ips = '0.0.0.0/0'
-  #end
+  # class Application < Rails::Application
+  # config.web_console.whitelisted_ips = ['10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16', '73.162.195.62/32']
+  # end
 
 end

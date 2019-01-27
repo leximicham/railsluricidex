@@ -1,2 +1,31 @@
-<h1>Games#show</h1>
-<p>Find me in app/views/games/show.html.erb</p>
+<% @page_title = "Show Game" %>
+
+<%= link_to("<<Back to List", '/games/admin', :class => 'back_link') %>
+
+  <div class="games show">
+    <h2>Show Subject</h2>
+
+    <table summary="Game detail view">
+      <tr>
+        <th>Server</th>
+        <td><%= @game.server_id %></td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td><%= @game.friendly_name %></td>
+      </tr>
+      <tr>
+        <th>Service Name</th>
+        <td><%= @game.service_name %></td>
+      </tr>
+      <tr>
+        <th>Created</th>
+        <td><%= @game.created_at %></td>
+      </tr>
+      <tr>
+        <th>Updated</th>
+        <td><%= @game.updated_at %></td>
+      </tr>
+    </table>
+
+  </div>
