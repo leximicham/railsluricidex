@@ -26,9 +26,9 @@ class ServersController < ApplicationController
     game_id = params[:game_id] rescue nil
 	  command = params[:command] rescue nil
 	  @game = Game.find(game_id)
-	  redirect_to "status/#{@game.server_id}" unless VALID_COMMANDS.include?(command)
+	  redirect_to('/servers') unless VALID_COMMANDS.include?(command)
 	  @game.send(command)
-	  redirect_to "status/#{@game.server_id}"
+	  redirect_to('/servers')
   end
 
   def delete
