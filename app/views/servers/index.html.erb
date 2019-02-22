@@ -8,6 +8,10 @@
   margin-top: 16px;
   margin-right: 8px;
 }
+
+.alert {
+  color: #D41111;
+}
 </style>
 
 <title>Luricidex</title>
@@ -17,22 +21,29 @@
 <% @server.each do |server| %>
 <ul>
   <li>
-    <b><%= server.friendly_name %></b>: <%= server.game_stats[:num_running] %> games running, <%= server.game_stats[:num_stopped] %> games stopped
-    <ul>
-      <% server.games.each do |game| %>
-      <li>
-        <div class="inline-button">
-          <% if game.running? %>
-            <%= button_to "Stop!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_stop" }} %>
-            <p><b><%= game.friendly_name %></b>: Up for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
-          <% else %>
-            <%= button_to "Start!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_start" }} %>
-            <p><b><%= game.friendly_name %></b>: Down for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
-          <% end %>
-        </div>
-      </li>
-      <% end %>
-    </ul>
+    <b><%= server.friendly_name %></b>:
+    <% if server.online? %>
+      <%= server.game_stats[:num_running] %> games running,
+      <%= server.game_stats[:num_stopped] %> games stopped,
+      up for <%= distance_of_time_in_words(server.uptime) %>
+      <ul>
+        <% server.games.each do |game| %>
+        <li>
+          <div class="inline-button">
+            <% if game.running? %>
+              <%= button_to "Stop!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_stop" }} %>
+              <p><b><%= game.friendly_name %></b>: Up for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
+            <% else %>
+              <%= button_to "Start!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_start" }} %>
+              <p><b><%= game.friendly_name %></b>: Down for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
+            <% end %>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+    <% else %>
+      <i class="alert">Offline</i>
+    <% end %>
   </li>
 </ul>
 <% end %>

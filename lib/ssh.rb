@@ -25,7 +25,23 @@ end
 
 class SSH
   def initialize(hostname, user, opts)
-	@ssh = Net::SSH.start(hostname, user, opts)
+    opts.merge!({ timeout: 1 })
+
+    begin
+      @ssh = Net::SSH.start(hostname, user, opts)
+      @online = true
+    rescue Net::SSH::ConnectionTimeout
+      @ssh = nil
+      @online = false
+    end
+  end
+
+  def online?
+    @online
+  end
+
+  def system_uptime
+    @ssh.exec!("awk '{print $1}' /proc/uptime").to_i
   end
 
   def status(service_name)
@@ -34,10 +50,10 @@ class SSH
   end
 
   def start(service_name)
-	output = @ssh.exec!("sudo sv start #{Shellwords.escape(service_name)}")
+    output = @ssh.exec!("sudo sv start #{Shellwords.escape(service_name)}")
   end
 
   def stop(service_name)
-	output = @ssh.exec!("sudo sv stop #{Shellwords.escape(service_name)}")
+    output = @ssh.exec!("sudo sv stop #{Shellwords.escape(service_name)}")
   end
 end

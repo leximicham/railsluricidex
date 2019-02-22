@@ -19,4 +19,12 @@ class Server < ApplicationRecord
     stats[:num_stopped] = self.games.select { |g| !g.running? }.size
     stats
   end
+
+  def online?
+    self.connect.online?
+  end
+
+  def uptime
+    self.connect.system_uptime
+  end
 end
