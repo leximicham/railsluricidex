@@ -8,11 +8,16 @@ class Game < ApplicationRecord
   has_many :scheduled_stops
 
   def get_status
-    self.server.connect.status(self.service_name)
+    @status ||= self.server.connect.status(self.service_name)
+    @status
   end
 
   def running?
-    get_status[:running]
+    get_status.running?
+  end
+
+  def uptime
+    get_status.uptime
   end
 
   def call_start
