@@ -66,6 +66,6 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:server_id, :friendly_name, :service_name)
+    params.require(:game).permit(:server_id, :friendly_name, :service_name, :notes)
   end
 end

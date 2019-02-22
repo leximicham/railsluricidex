@@ -3,6 +3,7 @@ class Game < ApplicationRecord
   # server_id
   # friendly_name
   # service_name
+  # notes
 
   belongs_to :server
   has_many :scheduled_stops

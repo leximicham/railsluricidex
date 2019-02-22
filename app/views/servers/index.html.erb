@@ -9,6 +9,16 @@
   margin-right: 8px;
 }
 
+.inline-button * {
+  margin-bottom: 2px;
+}
+
+.server-details p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 55px;
+}
+
 .alert {
   color: #D41111;
 }
@@ -29,15 +39,23 @@
       <ul>
         <% server.games.each do |game| %>
         <li>
-          <div class="inline-button">
             <% if game.running? %>
-              <%= button_to "Stop!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_stop" }} %>
-              <p><b><%= game.friendly_name %></b>: Up for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
+              <div class="inline-button">
+                <%= button_to "Stop!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_stop" }} %>
+                <p><b><%= game.friendly_name %></b>: Up for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
+              </div>
+              <div class="server-details">
+                <p><i><%= game.notes %></i></p>
+              </div>
             <% else %>
-              <%= button_to "Start!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_start" }} %>
-              <p><b><%= game.friendly_name %></b>: Down for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
+              <div class="inline-button">
+                <%= button_to "Start!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_start" }} %>
+                <p><b><%= game.friendly_name %></b>: Down for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
+              </div>
+              <div class="server-details">
+                <p><i><%= game.notes %></i></p>
+              </div>
             <% end %>
-          </div>
         </li>
         <% end %>
       </ul>
