@@ -22,6 +22,10 @@
 .alert {
   color: #D41111;
 }
+
+.running {
+  color: #018903;
+}
 </style>
 
 <title>Luricidex</title>
@@ -42,7 +46,7 @@
             <% if game.running? %>
               <div class="inline-button">
                 <%= button_to "Stop!", { :action => 'command' }, {:params => {:game_id => game.id, :command => "call_stop" }} %>
-                <p><b><%= game.friendly_name %></b>: Up for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
+                <p><b class="running"><%= game.friendly_name %></b>: Up for <%= distance_of_time_in_words(game.uptime) %> (<%= game.uptime %> seconds)</p>
               </div>
               <div class="server-details">
                 <p><i><%= game.notes %></i></p>
