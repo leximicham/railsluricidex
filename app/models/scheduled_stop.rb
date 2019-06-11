@@ -1,4 +1,4 @@
-class ScheduledStop < ApplicationRecord
+#class ScheduledStop < ApplicationRecord
   # game_id
   # created_at
   # updated_at
@@ -7,19 +7,19 @@ class ScheduledStop < ApplicationRecord
   # completed_at
   # cancelled_at
 
-  belongs_to :game
+#  belongs_to :game
 
-  loop.do
-    ScheduledStop.where(shutdown_time < (Time.now + 30.minutes) && warning_sent.nil?).each do |warning|
-      # send warnings
-      warning.warning_sent_at = Time.now
-      warning.save!
-    end
-    ScheduledStop.where(warning_sent < (Time.now - 30.minutes) && completed.nil?).each do |shutdown|
-      shutdown.game.server.connection.stop
-      shutdown.completed_at = Time.now
-      shutdown.save!
-    end
-
-    sleep 60
-end
+#  loop.do
+#    ScheduledStop.where(shutdown_time < (Time.now + 30.minutes) && warning_sent.nil?).each do |warning|
+#      # send warnings
+#      warning.warning_sent_at = Time.now
+#      warning.save!
+#    end
+#    ScheduledStop.where(warning_sent < (Time.now - 30.minutes) && completed.nil?).each do |shutdown|
+#      shutdown.game.server.connection.stop
+#      shutdown.completed_at = Time.now
+#      shutdown.save!
+#    end
+#
+#    sleep 60
+#end

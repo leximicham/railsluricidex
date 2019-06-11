@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /home/Web/luricidex.com
+/home/Web/.rbenv/shims/bundle exec unicorn -c config/unicorn.rb -E production -D
