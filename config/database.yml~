@@ -23,6 +23,7 @@ default: &default
   host: localhost
   username: Web
   password: <%= ENV['WEB_DATABASE_PASSWORD'] %>
+  #password: hellotoday
 
 development:
   <<: *default

@@ -24,11 +24,16 @@ class RunitParser
 end
 
 class SSH
+
+
   def initialize(hostname, user, opts)
-    opts.merge!({ timeout: 1 })
+    opts.merge!({ timeout: 1, auth_methods: [ "publickey", "hostbased", "password" ]})
 
     begin
       @ssh = Net::SSH.start(hostname, user, opts)
+#      @password = ENV['PASSWORD_BECAUSE_FUCK_NETSSH']
+#      @password = "butts"
+#      @ssh = Net::SSH.start("10.0.169.200", "alexicon", :password => @password)
       @online = true
     rescue Net::SSH::ConnectionTimeout
       @ssh = nil

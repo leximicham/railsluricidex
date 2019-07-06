@@ -9,7 +9,7 @@ class Server < ApplicationRecord
   has_many :games
 
   def connect
-      @conn ||=SSH.new(self.ip, self.username, keys: self.keyfile)
+      @conn ||=SSH.new(self.ip, self.username, keys: [self.keyfile])
       @conn
   end
 

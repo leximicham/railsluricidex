@@ -1,21 +1,10 @@
 class ServersController < ApplicationController
   VALID_COMMANDS = ["call_start","call_stop"]
 
-  layout 'test_layout'
+  layout 'admin_area'
 
   def index #GET
-    self.list
-  end
-
-  def list #GET
     @server = Server.all
-    # byebug
-  end
-
-  def status #GET
-    server_id = params[:server_id] rescue nil
-    redirect_to 'list' if server_id == nil #me thinks this is pseudo code
-    @server = Server.find(server_id)
   end
 
   def admin
@@ -57,7 +46,7 @@ class ServersController < ApplicationController
   end
 
   def new
-    @server = Server.new({:keyfile => '~/.ssh/id_rsa'})
+    @server = Server.new({:keyfile => '"/home/Web/.ssh/id_rsa"'})
   end
 
   def create

@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
 
-  layout 'test_layout'
+  layout 'admin_area'
 
   # def index #GET
   #   self.list
