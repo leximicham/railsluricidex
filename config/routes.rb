@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
   root to: 'root#index'
   resources :root
+  namespace :api do
+    namespace :v0 do
+      resources :servers do
+        collection do
+          post :command
+        end
+      end
+      resources :games
+    end
+  end
   resources :servers do
     collection do
-      get :list
       get :admin
       post :command
     end

@@ -2,20 +2,6 @@ class GamesController < ApplicationController
 
   layout 'admin_area'
 
-  # def index #GET
-  #   self.list
-  # end
-  #
-  # def list #GET
-  #   @game = Game.all
-  # end
-  #
-  # def status #GET
-  #   game_id = params[:game_id] rescue nil
-  #   redirect_to 'list' if game_id == nil #me thinks this is pseudo code
-  #   @game = Game.find(game_id)
-  # end
-
   def admin
     @game = Game.all
   end
@@ -46,7 +32,7 @@ class GamesController < ApplicationController
   end
 
   def new
-    @game = Game.new({:server_id => '14'})
+    @game = Game.new({:server_id => 'input the SERVER id'})
   end
 
   def create
@@ -55,6 +41,7 @@ class GamesController < ApplicationController
       flash[:notice] = "Game created successfully."
       redirect_to('/games/admin')
     else
+      flash[:error] = "Game failed to be created."
       render('new')
     end
   end
@@ -66,6 +53,6 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:server_id, :friendly_name, :service_name, :notes)
+    params.require(:game).permit(:server_id, :friendly_name, :service_name, :port, :notes)
   end
 end

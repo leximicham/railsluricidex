@@ -1674,3 +1674,55 @@
 2019-01-28_06:44:22.24728 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
 2019-01-28_06:44:23.76909 `/` is not writable.
 2019-01-28_06:44:23.76950 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_02:52:20.09654 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_02:52:35.96550 `/` is not writable.
+2019-07-07_02:52:35.96597 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_03:24:32.28259 `/` is not writable.
+2019-07-07_03:24:32.28343 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_03:47:22.38355 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_03:47:22.38759 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_03:47:30.48129 `/` is not writable.
+2019-07-07_03:47:30.48165 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_04:33:18.39357 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_04:33:41.21996 `/` is not writable.
+2019-07-07_04:33:41.22027 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_04:56:36.11893 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_04:56:59.18708 `/` is not writable.
+2019-07-07_04:56:59.18739 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_05:04:03.44862 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_05:04:30.80177 `/` is not writable.
+2019-07-07_05:04:30.80204 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_05:25:18.80597 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_05:25:47.70321 `/` is not writable.
+2019-07-07_05:25:47.70358 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_05:31:18.81933 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_05:31:47.70701 `/` is not writable.
+2019-07-07_05:31:47.70742 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_05:35:49.61167 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_05:36:19.65312 `/` is not writable.
+2019-07-07_05:36:19.65341 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_05:40:34.99856 ./run: 3: cd: can't cd to /home/Web/luricidex.com
+2019-07-07_05:41:02.60763 `/` is not writable.
+2019-07-07_05:41:02.60798 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_11:38:13.00414 `/` is not writable.
+2019-07-07_11:38:13.01647 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-07_11:40:44.02677 `/` is not writable.
+2019-07-07_11:40:44.02720 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-07-14_18:32:43.35071 `/` is not writable.
+2019-07-14_18:32:43.35132 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2019-08-04_03:52:11.23505 `/` is not writable.
+2019-08-04_03:52:11.23577 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2020-02-16_07:03:02.85274 `/` is not writable.
+2020-02-16_07:03:02.90829 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2020-02-16_07:06:58.81167 `/` is not writable.
+2020-02-16_07:06:58.81228 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2020-02-16_07:14:55.39429 `/` is not writable.
+2020-02-16_07:14:55.39462 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2020-02-16_07:23:28.73134 `/` is not writable.
+2020-02-16_07:23:28.73165 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2020-02-16_07:26:39.91190 `/` is not writable.
+2020-02-16_07:26:39.91226 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2020-02-16_07:32:33.52471 `/` is not writable.
+2020-02-16_07:32:33.52508 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.
+2020-02-16_08:28:29.42073 `/` is not writable.
+2020-02-16_08:28:29.42148 Bundler will use `/tmp/bundler/home/unknown' as your home directory temporarily.

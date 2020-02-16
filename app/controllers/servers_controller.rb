@@ -55,6 +55,7 @@ class ServersController < ApplicationController
       flash[:notice] = "Server created successfully."
       redirect_to('/servers/admin')
     else
+      flash[:error] = "Server failed to be created."
       render('new')
     end
   end

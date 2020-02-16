@@ -11,6 +11,7 @@
       <th>Server</th>
       <th>Friendly Name</th>
       <th>Service Name</th>
+      <th>port</th>
       <th>Notes</th>
       <th>Actions</th>
     </tr>
@@ -20,6 +21,7 @@
       <td><%= game.server_id %></td>
       <td><%= game.friendly_name %></td>
       <td><%= game.service_name %></td>
+      <td><%= game.port %></td>
       <td><%= game.notes %></td>
       <td>
         <%= link_to("Show", game_path(game), :class => 'action show') %>

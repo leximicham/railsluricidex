@@ -3,6 +3,7 @@ class Game < ApplicationRecord
   # server_id
   # friendly_name
   # service_name
+  # port
   # notes
 
   belongs_to :server
