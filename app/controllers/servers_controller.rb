@@ -1,5 +1,5 @@
 class ServersController < ApplicationController
-  VALID_COMMANDS = ["call_start","call_stop"]
+  VALID_COMMANDS = ["call_start","call_stop","call_save"]
 
   layout 'admin_area'
 
@@ -17,7 +17,18 @@ class ServersController < ApplicationController
 	  @game = Game.find(game_id)
 	  redirect_to('/servers') unless VALID_COMMANDS.include?(command)
 	  @game.send(command)
-	  redirect_to('/servers')
+    if command == "call_start"
+      sleep 3
+      redirect_to('/servers')
+    elsif command == "call_stop"
+      sleep 25
+      redirect_to('/servers')
+    elsif command == "call_save"
+      sleep 15
+      redirect_to('/servers')
+    else
+	    redirect_to('/servers')
+    end
   end
 
   def delete
