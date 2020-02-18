@@ -29,4 +29,13 @@ class Game < ApplicationRecord
   def call_stop
 	self.server.connect.stop(self.service_name)
   end
+
+  def call_save
+	self.server.act_locally.save(self.server.ip, self.port)
+  self.server.act_locally.last_saved_at(self.server.friendly_name, self.friendly_name)
+  end
+
+  def get_last_saved_at
+	self.server.act_locally.last_saved_at(self.server.friendly_name.downcase, self.friendly_name.downcase)
+  end
 end

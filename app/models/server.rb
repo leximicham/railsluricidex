@@ -5,6 +5,7 @@ class Server < ApplicationRecord
   # username
   # keyfile
   require_dependency 'ssh'
+  require_dependency 'local_commands'
 
   has_many :games
 
@@ -26,5 +27,10 @@ class Server < ApplicationRecord
 
   def uptime
     self.connect.system_uptime
+  end
+
+  def act_locally
+    @alocal = ActLocally.new(self.ip, self.friendly_name)
+    @alocal
   end
 end

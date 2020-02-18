@@ -1,19 +1,15 @@
-class Save
+class ActLocally
 
-  def initialize(ip, port)
+  def initialize(ip, server)
   end
 
-  def save
-    `scripts/rcon -Phellotoday -a#{Shellwords.escape(ip)} -p#{Shellwords.escape(port)} SaveWorld`
+  def save(ip, port)
+    `scripts/rcon -Phellotoday -a#{ip} -p#{Shellwords.escape(port)} SaveWorld`
   end
 
-class LastSavedAt
-
-  def initialize(game, server)
-  end
-
-  def last_saved_at
-    saves = Dir["/mnt/nas/ARK/saves/#{Shellwords.escape(server)}/#{Shellwords.escape(game)}/*.ark"]
-    return "Multiple saves found, something is probably wrong." unless saves.size == 1
+  def last_saved_at(server, friendly_name)
+    saves = Dir["/mnt/nas/ARK/saves/#{server}/#{Shellwords.escape(friendly_name)}/*.ark"]
+    return "Multiple saves found in #{server}/#{Shellwords.escape(friendly_name)}, something is probably wrong." unless saves.size == 1
     File.mtime(saves.first)
   end
+end
