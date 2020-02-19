@@ -21,7 +21,7 @@ class ServersController < ApplicationController
       sleep 3
       redirect_to('/servers')
     elsif command == "call_stop"
-      sleep 25
+      sleep 20
       redirect_to('/servers')
     elsif command == "call_save"
       sleep 15
